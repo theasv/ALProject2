@@ -42,13 +42,14 @@
         {
             area(Processing)
             {
-                action(ActionName)
+                action("Course Report")
                 {
+                    Caption = 'Show the Course Report';
                     ApplicationArea = All;
                     
                     trigger OnAction()
                     begin
-                        
+                        Report.Run(50109,false,false);
                     end;
                 }
             }
